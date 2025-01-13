@@ -22,6 +22,7 @@ def get_credentials_path():
 
 
 path = get_credentials_path()
+print(path)
 # 这里config需要用encoding，以防跨平台乱码
 config.read(path, encoding="utf-8")
 print(config.sections())
