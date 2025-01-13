@@ -11,8 +11,10 @@ aes_key = privateCrypt.get_aes_key()
 
 def get_credentials_path():
     if cf.CREDENTIALS_PATH is not None:
+        print "1"
         return cf.CREDENTIALS_PATH
     else:
+        print "1"
         home_path = os.getcwd()
         config_parent_path = os.path.join(home_path, 'myConfig')
         config_path = os.path.join(config_parent_path, 'credentials')
