@@ -14,7 +14,7 @@ def get_credentials_path():
         print "1"
         return cf.CREDENTIALS_PATH
     else:
-        print "1"
+        print "2"
         home_path = os.getcwd()
         config_parent_path = os.path.join(home_path, 'myConfig')
         config_path = os.path.join(config_parent_path, 'credentials')
