@@ -29,7 +29,7 @@ SCKEY = os.environ.get('SCKEY')
 *********** 地图配置 ***********
 获取地点信息,这里用的高德api,需要自己去高德开发者平台申请自己的key
 '''
-AMAP_KEY = os.environ.get("GAODE_KEY")
+AMAP_KEY = os.environ.get("ffe133fd219671534d998ce50f004f01")
 
 
 '''
