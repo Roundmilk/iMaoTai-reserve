@@ -39,7 +39,7 @@ s_content = ""
 for section in configs.sections():
     if TODAY > configs.get(section, 'enddate'):
         continue
-    mobile = privateCrypt.decrypt_aes_ecb(section, aes_key)
+    mobile = '*' * 7 + privateCrypt.decrypt_aes_ecb(section, aes_key)[-4:]
     province = configs.get(section, 'province')
     city = configs.get(section, 'city')
     token = configs.get(section, 'token')
